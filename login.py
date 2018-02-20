@@ -77,8 +77,8 @@ def getLogoutLink():
     return wait_until_element_visible("//a[contains(.,'Log Out')]")
 
 #----test script----
-USERNAME = 'xyzabc';
-PASSWORD = 'xyzabc';
+USERNAME = 'xyzabcd';
+PASSWORD = 'xyzabcd';
 
 #----setUp----
 driver = webdriver.Chrome()
