@@ -81,7 +81,9 @@ USERNAME = 'xyzabcde';
 PASSWORD = 'xyzabcde';
 
 #----setUp----
-driver = webdriver.Chrome()
+#not a nice solution but python could not find chromedriver even if it's on the sys.path
+driver = webdriver.Chrome(r"/home/tmp1/.local/chromedriver")
+#driver = webdriver.Chrome()
 driver.get(CONFIG_URL);
 
 #----Login----
