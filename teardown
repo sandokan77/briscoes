@@ -1,0 +1,2 @@
+kill -9 $(ps ax | grep chromedriver | fgrep -v grep | awk '{ print $1 }')
+kill -9 $(ps ax | grep chromium-browse | fgrep -v grep | awk '{ print $1 }')
