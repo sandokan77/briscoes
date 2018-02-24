@@ -77,8 +77,8 @@ def getLogoutLink():
     return wait_until_element_visible("//a[contains(.,'Log Out')]")
 
 #----test script----
-USERNAME = 'xyzabcde';
-PASSWORD = 'xyzabcde';
+USERNAME = 'xyzabcdef';
+PASSWORD = 'xyzabcdef';
 
 #----setUp----
 #not a nice solution but python could not find chromedriver even if it's on the sys.path
