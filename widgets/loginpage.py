@@ -5,10 +5,10 @@ import framework
 
 
 def getEmailAddrTextfield(driver):
-    return framework.widgethelper.wait_until_element_visible(driver,"//input[@id='emailaddress']")
+    return framework.widgethelper.get_element_when_visible(driver,"//input[@id='emailaddress']")
 
 def getPasswordTextfield(driver):
-    return framework.widgethelper.wait_until_element_visible(driver,"//input[@name='password']")
+    return framework.widgethelper.get_element_when_visible(driver,"//input[@name='password']")
 
 def getLoginButton(driver):
-    return framework.widgethelper.wait_until_element_visible(driver,"//input[@title='Login']")
+    return framework.widgethelper.get_element_when_visible(driver,"//input[@title='Login']")
