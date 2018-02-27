@@ -1,6 +1,5 @@
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
-#!
 from selenium.webdriver.common import keys
 
 from widgets import loginpage
@@ -16,18 +15,18 @@ import account
 
 
 #----config----
-CONFIG_URL = "http://www.briscoes.co.nz/";
+CONFIG_URL = "http://www.briscoes.co.nz/"
 CONFIG_CHROMEDRIVER = "/home/tmp1/.local/chromedriver"
 
 #----setUp----
 driver = webdriver.Chrome(CONFIG_CHROMEDRIVER)
-driver.get(CONFIG_URL);
+driver.get(CONFIG_URL)
 
 #----Login----
-header.getLoginLink(driver).click();
-loginpage.getEmailAddrTextfield(driver).send_keys(account.USERNAME);
-loginpage.getPasswordTextfield(driver).send_keys(account.PASSWORD);
-loginpage.getLoginButton(driver).click();
+header.getLoginLink(driver).click()
+loginpage.getEmailAddrTextfield(driver).send_keys(account.USERNAME)
+loginpage.getPasswordTextfield(driver).send_keys(account.PASSWORD)
+loginpage.getLoginButton(driver).click()
 assert "Account Profile" in driver.page_source #https://stackoverflow.com/questions/7861775/python-selenium-accessing-html-source
 widgethelper.move_over_element(driver, header.getBedAndBathMenu(driver))
 common.getUnwantedSubscriptionPopupCloseButton(driver).click()

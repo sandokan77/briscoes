@@ -1,5 +1,5 @@
 import sys; sys.path.insert(0, "..")
-print (sys.path);
+print (sys.path)
 
 import framework
 
