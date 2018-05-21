@@ -1,3 +1,6 @@
+import sys
+print sys.path
+
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common import keys
@@ -13,13 +16,13 @@ import account
 
 
 
-
 #----config----
 CONFIG_URL = "http://www.briscoes.co.nz/"
-CONFIG_CHROMEDRIVER = "/home/tmp1/.local/chromedriver"
+#CONFIG_CHROMEDRIVER = "/home/tmp1/.local/chromedriver"
 
 #----setUp----
-driver = webdriver.Chrome(CONFIG_CHROMEDRIVER)
+#driver = webdriver.Chrome(CONFIG_CHROMEDRIVER)
+driver = webdriver.Chrome()
 driver.get(CONFIG_URL)
 
 #----Login----
